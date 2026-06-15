@@ -1,9 +1,14 @@
 {
   "name": "neo-design-patterns-hw-04",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "builder": "ts-node src/builder/main.ts",
+    "prototype": "ts-node src/prototype/main.ts",
+    "singleton": "ts-node src/singleton/main.ts",
+    "dev": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -16,7 +21,7 @@
     "url": "https://github.com/Iryna-Holova/neo-design-patterns-hw-04/issues"
   },
   "homepage": "https://github.com/Iryna-Holova/neo-design-patterns-hw-04#readme",
-  "description": "",
+  "description": "Design patterns examples",
   "devDependencies": {
     "@types/node": "^25.9.3",
     "ts-node": "^10.9.2",
